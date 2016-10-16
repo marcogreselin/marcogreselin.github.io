@@ -102,6 +102,10 @@ textarea {
 body {
     background: linear-gradient(290deg, rgba(0,149,201,.21), rgba(108,32,133,.21)) fixed;
     font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", Helvetica, sans-serif;
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+    display: flex;
+    align-items: center;
 }
 
 
@@ -112,13 +116,6 @@ img{
     margin: 30px auto 30px auto;
     display: block;
     pointer-events: none;
-}
-
-body {
-    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-    min-height: 100vh; /* These two lines are counted as one :-)       */
-    display: flex;
-    align-items: center;
 }
 
 .container {
