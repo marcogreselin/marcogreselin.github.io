@@ -104,21 +104,16 @@ body {
     font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", Helvetica, sans-serif;
 }
 
-.welcome {
-    font-size: 2em;
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.welcome img{
+img{
     width: 100%;
-    max-width: 200px;
+    max-width: 300px;
     border-radius: 50%;
+    margin: 30px auto 30px auto;
+    display: block;
 }
 
-@media (max-width: 470px) {
+/*@media (max-width: 470px) {
     .hide-xs {
         display: none;
     }
@@ -126,13 +121,74 @@ body {
         width: 100%;
         position: absolute;
     }
+}*/
+
+body {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+    display: flex;
+    align-items: center;
 }
 
-.message {
-    font-size: 0.5em;
+.container {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
+a {
+    color: inherit;
+}
 
+.welcome a {
+    border-bottom: solid 0.5px black;
+}
+
+a:hover {
+    color: inherit;
+    text-decoration: inherit;
+    color: inherit;
+}
+
+a:active {
+    color: inherit;
+    text-decoration: inherit;
+    color: inherit;
+}
+
+a:focus {
+    color: inherit;
+    text-decoration: inherit;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+    padding: 0px;
+    margin: auto;
+}
+
+li {
+    display: inline;
+}
+
+li:hover {
+    border-bottom: solid 1px black;
+}
+
+li:not(:last-child){
+    margin-right: 20px;
+}
+
+.links {
+    font-size: 2em;
+}
+
+.welcome {
+    max-width: 400px;
+    margin: 20px auto 0px auto;
+    text-align: center;
+}
 
 
 
