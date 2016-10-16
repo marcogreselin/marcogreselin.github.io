@@ -131,7 +131,7 @@ a {
 }
 
 .welcome a {
-    border-bottom: solid 0.5px black;
+    border-bottom: solid 0.5px #333;
 }
 
 a:hover {
