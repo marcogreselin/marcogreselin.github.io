@@ -168,6 +168,14 @@ li:active {
     border-bottom: none;
 }
 
+li:focus {
+    border-bottom: none;
+}
+
+li:visited {
+    border-bottom: none;
+}
+
 li:not(:last-child){
     margin-right: 10px;
 }
