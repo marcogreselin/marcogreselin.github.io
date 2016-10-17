@@ -164,6 +164,10 @@ li:hover {
     border-bottom: solid 1px black;
 }
 
+li:active {
+    border-bottom: none;
+}
+
 li:not(:last-child){
     margin-right: 10px;
 }
