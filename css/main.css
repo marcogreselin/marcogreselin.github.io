@@ -183,11 +183,8 @@ p {
 }
 
 @media only screen and (max-width: 400px) {
-    body {
-        font-size: 1.2em;
-    }
-
     .welcome {
+        font-size: 1.2em;
     }
 }
 
