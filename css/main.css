@@ -221,6 +221,19 @@ p {
     margin-bottom: 30px;
 }
 
+@media (max-width: 379px) {
+    .time-block {
+        width: 270px;
+    }
+    .project img {
+        width: 270px;
+    }
+    .project iframe {
+        width: 270px;
+        height: 152px;
+    }
+}
+
 .time-block:last-child {
     margin-right: 0px;
 }
