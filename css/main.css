@@ -108,14 +108,20 @@ body {
     align-items: center;
 }
 
+::selection {
+  background: #DBEDF4; /* WebKit/Blink Browsers */
+}
 
-img{
+img {
+    pointer-events: none;
+}
+
+img.profile{
     width: 100%;
     max-width: 300px;
     border-radius: 50%;
     margin: 30px auto 30px auto;
     display: block;
-    pointer-events: none;
 }
 
 .container {
@@ -151,9 +157,7 @@ a:focus {
 
 ul {
     list-style: none;
-    text-align: center;
     padding: 0px;
-    margin: auto;
 }
 
 li {
@@ -170,6 +174,8 @@ li:not(:last-child){
 
 .links {
     font-size: 2em;
+    margin: auto;
+    text-align: center;
 }
 
 .welcome {
@@ -186,6 +192,75 @@ p {
     .welcome {
         font-size: 1.2em;
     }
+}
+
+/*Only used in the links page*/
+.back {
+    font-size: 0.9em;
+    display: inline;
+    margin-bottom: 30px;
+    border-bottom: solid 0.5px #333;
+}
+
+#waiting {
+    margin-top: 20px;
+}
+
+.title {
+    font-size: 1.2em;
+    margin-top: 20px;
+    display: block;
+
+}
+
+.time-block {
+    display: inline-block;
+    width: 330px;
+    margin-right: 20px;
+    vertical-align:top;
+    margin-bottom: 30px;
+}
+
+.time-block:last-child {
+    margin-right: 0px;
+}
+
+@media (max-width: 685px) {
+    .time-block {
+        margin-right: 0px;
+    }
+}
+
+.project .title {
+    font-size: 0.9em;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+
+.time-block-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.time-block-wrapper a {
+    border-bottom: solid 0.5px #333;
+}
+
+.time-block .links {
+    font-size: 1em;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.time-block .links a {
+    margin-right: 15px;
+}
+
+.time-block .links a:last-child {
+    margin-right: 0px;
 }
 
 
